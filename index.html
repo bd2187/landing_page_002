@@ -5,14 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
     </head>
     <body>
+        <!-- Start .header -->
         <header class="header">
             <h1 class="header__logo">Brandon Dionisio</h1>
-            <div class="header__hamburger_menu hamburger_menu">
-                <div class="hamburger_menu__line"></div>
-                <div class="hamburger_menu__line"></div>
-                <div class="hamburger_menu__line"></div>
+            <div class="header__hamburger_menu hamburger-menu">
+                <div class="hamburger-menu__line"></div>
+                <div class="hamburger-menu__line"></div>
+                <div class="hamburger-menu__line"></div>
             </div>
             <ul class="header__nav">
                 <li>About</li>
@@ -20,6 +27,27 @@
                 <li>Skills</li>
             </ul>
         </header>
+        <!-- End .header -->
+
+        <section>
+            <div id="aboutSection" class="content-container about">
+                <h1 class="about__title">
+                    BRANDON <span class="last-name">DIONISIO</span>
+                </h1>
+                <p class="about__email">BRANDON.DIONISIO.26@GMAIL.COM</p>
+                <p class="about__description">
+                    Hi! I'm Brandon, a Front End Developer currently working at
+                    VS Media. My interests include Javascript, React, & Redux.
+                    Other facts about me: I love to learn. I enjoy learning new
+                    ways to improve code along with building and maintaining
+                    user interfaces.
+                </p>
+                <ul class="about__social-media">
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                </ul>
+            </div>
+        </section>
         <script src="./dist/app_bundle.js"></script>
     </body>
 </html>
