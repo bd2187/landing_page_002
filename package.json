@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack",
-        "start": "webpack-dev-server --output-public-path=/dist/"
+        "dev": "webpack-dev-server --output-public-path=/dist/"
     },
     "author": "brandon dionisio",
     "license": "ISC",
