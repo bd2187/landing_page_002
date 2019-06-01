@@ -1,3 +1,7 @@
-const test_foo = () => console.log("test");
+var hamburger_menu = document.getElementsByClassName("hamburger-menu")[0];
 
-test_foo();
+hamburger_menu.addEventListener("click", function() {
+    var header_nav = document.getElementsByClassName("header__nav")[0];
+
+    header_nav.classList.toggle("header__nav--open");
+});
