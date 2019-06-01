@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -27,6 +28,12 @@ $base-color: #bf533b;
     right: 0;
     overflow-y: hidden;
 
+    .header__logo {
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
     .header__mobile {
         display: flex;
         align-items: center;
@@ -36,7 +43,6 @@ $base-color: #bf533b;
         .header__hamburger_menu {
             border-radius: 3px;
             border: 0.5px solid rgba(255, 255, 255, 0.3);
-
             height: 38px;
             width: 54px;
 
@@ -62,11 +68,22 @@ $base-color: #bf533b;
         height: 0;
 
         .nav-link {
-            margin: 0.5em 0;
+            margin: 0.75em 0;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 700;
+            cursor: pointer;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.75);
+            }
         }
     }
 
     .header__nav--open {
-        height: 90px;
+        height: 100px;
     }
 }
