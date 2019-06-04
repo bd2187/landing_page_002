@@ -42,12 +42,20 @@
 
         <section class="section">
             <!-- Start #aboutSection -->
-            <div id="aboutSection" class="content-container about">
+            <div id="aboutSection" class="content-container about wrap">
                 <h1 class="about__title content-container__title">
-                    BRANDON <span class="last-name">DIONISIO</span>
+                    <span class="first-name">BRANDON</span>
+                    <span class="last-name">DIONISIO</span>
                 </h1>
-                <p class="about__email">BRANDON.DIONISIO.26@GMAIL.COM</p>
-                <p class="about__description">
+                <div class="about__contact-info">
+                    <p>
+                        LOS ANGELES, CA ·
+                        <span class="about__email">
+                            BRANDON.DIONISIO.26@GMAIL.COM
+                        </span>
+                    </p>
+                </div>
+                <p class="about__description content-text">
                     Hi! I'm Brandon, a Front End Developer currently working at
                     VS Media. My interests include Javascript, React, & Redux.
                     Other facts about me: I love to learn. I enjoy learning new
@@ -55,10 +63,17 @@
                     user interfaces.
                 </p>
                 <ul class="about__social-media">
-                    <li><i class="fab fa-github"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li class="about__social-media-icon-container">
+                        <i class="about__social-media-icon fab fa-github"></i>
+                    </li>
+                    <li class="about__social-media-icon-container">
+                        <i
+                            class="about__social-media-icon fab fa-linkedin-in"
+                        ></i>
+                    </li>
                 </ul>
             </div>
+            <div class="section__divider"></div>
             <!-- End #aboutSection -->
 
             <!-- Start #experienceSection -->
