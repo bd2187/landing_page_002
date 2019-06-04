@@ -14,10 +14,24 @@ p {
 
 // Variables
 $base-color: #bf533b;
+$secondary-color: #343a40;
+$content-text-color: #9aa1a8;
 
 .wrap {
     width: 95%;
     margin: 0 auto;
+}
+
+.content-text {
+    font-size: 1.15em;
+    color: $content-text-color;
+    line-height: 1.4;
+}
+
+.section__divider {
+    background: $content-text-color;
+    width: 100%;
+    height: 0.5px;
 }
 
 .header {
@@ -84,6 +98,69 @@ $base-color: #bf533b;
     }
 
     .header__nav--open {
-        height: 100px;
+        height: 95px;
+    }
+}
+
+.section {
+    padding-top: 54px;
+}
+
+.about {
+    padding-top: 90px;
+    padding-bottom: 80px;
+
+    .about__title {
+        display: flex;
+        flex-direction: column;
+        font-size: 4.5em;
+        letter-spacing: -0.75px;
+
+        .first-name {
+            color: $secondary-color;
+        }
+
+        .last-name {
+            color: $base-color;
+            margin-top: -15px;
+        }
+    }
+
+    .about__contact-info {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: $content-text-color;
+        line-height: 1.35;
+        .about__email {
+            color: $base-color;
+        }
+    }
+
+    .about__description {
+        margin: 50px 0;
+    }
+
+    .about__social-media {
+        display: flex;
+
+        .about__social-media-icon-container {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            background-color: $secondary-color;
+            color: #fff;
+            margin-right: 20px;
+            cursor: pointer;
+            &:hover {
+                background: $base-color;
+            }
+        }
+
+        .about__social-media-icon {
+            font-size: 1.5em;
+        }
     }
 }
