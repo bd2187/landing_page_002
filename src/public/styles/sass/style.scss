@@ -28,10 +28,16 @@ $content-text-color: #9aa1a8;
     line-height: 1.4;
 }
 
+.content-container__title {
+    font-size: 3em;
+    color: $secondary-color;
+    margin-bottom: 70px;
+}
+
 .section__divider {
     background: $content-text-color;
     width: 100%;
-    height: 0.5px;
+    height: 1px;
 }
 
 .header {
@@ -106,10 +112,12 @@ $content-text-color: #9aa1a8;
     padding-top: 54px;
 }
 
-.about {
+.content-container {
     padding-top: 90px;
     padding-bottom: 80px;
+}
 
+.about {
     .about__title {
         display: flex;
         flex-direction: column;
@@ -161,6 +169,40 @@ $content-text-color: #9aa1a8;
 
         .about__social-media-icon {
             font-size: 1.5em;
+        }
+    }
+}
+
+.experience {
+    .experience__item {
+        margin: 60px 0;
+
+        .experience__header {
+            margin: 25px 0;
+        }
+
+        .experience__title,
+        .experience__position {
+            margin: 7px 0;
+        }
+
+        .experience__title {
+            font-size: 1.5em;
+            color: $secondary-color;
+        }
+
+        .experience__position {
+            font-size: 1.25em;
+            color: $content-text-color;
+        }
+
+        .content-text {
+            font-size: 1.1em;
+        }
+
+        .experience__date {
+            margin: 25px 0;
+            color: $base-color;
         }
     }
 }
