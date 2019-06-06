@@ -34,6 +34,12 @@ $content-text-color: #9aa1a8;
     margin-bottom: 70px;
 }
 
+.secondary-title {
+    font-size: 1.75em;
+    color: $content-text-color;
+    margin: 7px 0;
+}
+
 .section__divider {
     background: $content-text-color;
     width: 100%;
@@ -181,19 +187,13 @@ $content-text-color: #9aa1a8;
             margin: 25px 0;
         }
 
-        .experience__title,
-        .experience__position {
+        .experience__title {
             margin: 7px 0;
         }
 
         .experience__title {
-            font-size: 1.5em;
+            font-size: 2em;
             color: $secondary-color;
-        }
-
-        .experience__position {
-            font-size: 1.25em;
-            color: $content-text-color;
         }
 
         .content-text {
@@ -203,6 +203,24 @@ $content-text-color: #9aa1a8;
         .experience__date {
             margin: 25px 0;
             color: $base-color;
+        }
+    }
+}
+
+.skills {
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        // background: red;
+        // justify-content: space-between;
+        align-items: center;
+        .skills-list__item {
+            width: 50px;
+            // background: blue;
+            margin: 10px 5px;
+        }
+        .skills-list__item img {
+            width: 100%;
         }
     }
 }

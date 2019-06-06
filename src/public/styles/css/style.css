@@ -29,6 +29,12 @@ p {
   margin-bottom: 70px;
 }
 
+.secondary-title {
+  font-size: 1.75em;
+  color: #9aa1a8;
+  margin: 7px 0;
+}
+
 .section__divider {
   background: #9aa1a8;
   width: 100%;
@@ -154,17 +160,12 @@ p {
 .experience .experience__item .experience__header {
   margin: 25px 0;
 }
-.experience .experience__item .experience__title,
-.experience .experience__item .experience__position {
+.experience .experience__item .experience__title {
   margin: 7px 0;
 }
 .experience .experience__item .experience__title {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #343a40;
-}
-.experience .experience__item .experience__position {
-  font-size: 1.25em;
-  color: #9aa1a8;
 }
 .experience .experience__item .content-text {
   font-size: 1.1em;
@@ -172,6 +173,19 @@ p {
 .experience .experience__item .experience__date {
   margin: 25px 0;
   color: #bf533b;
+}
+
+.skills .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.skills .skills-list .skills-list__item {
+  width: 50px;
+  margin: 10px 5px;
+}
+.skills .skills-list .skills-list__item img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
