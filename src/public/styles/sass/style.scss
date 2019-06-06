@@ -1,3 +1,8 @@
+// Variables
+$base-color: #bf533b;
+$secondary-color: #343a40;
+$content-text-color: #9aa1a8;
+
 * {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
@@ -12,13 +17,12 @@ p {
     margin: 0;
 }
 
-// Variables
-$base-color: #bf533b;
-$secondary-color: #343a40;
-$content-text-color: #9aa1a8;
+a {
+    text-decoration: none;
+}
 
 .wrap {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -31,7 +35,7 @@ $content-text-color: #9aa1a8;
 .content-container__title {
     font-size: 3em;
     color: $secondary-color;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .secondary-title {
@@ -99,12 +103,17 @@ $content-text-color: #9aa1a8;
             font-weight: 700;
             cursor: pointer;
 
-            &:first-child {
-                margin-top: 0;
+            a {
+                width: 100%;
+                display: inline-block;
+                color: rgba(255, 255, 255, 0.5);
+                &:hover {
+                    color: rgba(255, 255, 255, 0.75);
+                }
             }
 
-            &:hover {
-                color: rgba(255, 255, 255, 0.75);
+            &:first-child {
+                margin-top: 0;
             }
         }
     }
@@ -208,19 +217,31 @@ $content-text-color: #9aa1a8;
 }
 
 .skills {
+    .secondary-title {
+        margin: 20px 0;
+    }
+
     .skills-list {
         display: flex;
         flex-wrap: wrap;
-        // background: red;
-        // justify-content: space-between;
+
         align-items: center;
         .skills-list__item {
             width: 50px;
-            // background: blue;
             margin: 10px 5px;
         }
         .skills-list__item img {
             width: 100%;
+        }
+    }
+
+    .workflow__item {
+        display: flex;
+        margin: 5px 0;
+        color: $content-text-color;
+
+        .fa-check {
+            margin: 0 7px;
         }
     }
 }
