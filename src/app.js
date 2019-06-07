@@ -47,11 +47,35 @@ const App = {
         e.preventDefault();
 
         var section_name = this.getAttribute("href").replace(/#/, "");
-        var section_el = document
-            .getElementById(section_name)
-            .scrollIntoView({ behavior: "smooth" });
+        var target_el = document.getElementById(section_name);
 
-        App.toggle_nav();
+        if (target_el) {
+            var target_pos = target_el.offsetTop;
+            var start_pos = window.pageYOffset;
+            var distance = target_pos - start_pos;
+            var duration = 800;
+            var start = null;
+
+            var animate = function animate(timestamp) {
+                if (!start) start = timestamp;
+                var progress = timestamp - start;
+                window.scrollTo(
+                    0,
+                    ease_in_out(progress, start_pos, distance, duration)
+                );
+                if (progress < duration) window.requestAnimationFrame(animate);
+            };
+
+            var ease_in_out = function ease_in_out(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return (c / 2) * t * t * t + b;
+                t -= 2;
+                return (c / 2) * (t * t * t + 2) + b;
+            };
+
+            window.requestAnimationFrame(animate);
+            App.toggle_nav();
+        }
     },
 
     highlight_nav_section: function highlight_nav_section() {
