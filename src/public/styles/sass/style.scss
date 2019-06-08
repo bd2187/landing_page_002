@@ -1,5 +1,5 @@
 // Variables
-$base-color: #bf533b;
+$base-color: #d6725c;
 $secondary-color: #343a40;
 $content-text-color: #9aa1a8;
 
@@ -50,7 +50,7 @@ a {
 }
 
 .header {
-    background: #bf533b;
+    background: $base-color;
     position: fixed;
     top: 0;
     left: 0;
@@ -119,6 +119,12 @@ a {
 
     .header__nav--open {
         height: 95px;
+    }
+
+    .header__profile-picture {
+        width: 150px;
+        height: 150px;
+        display: none;
     }
 }
 
@@ -263,12 +269,48 @@ a {
 
 @media only screen and (min-width: 990px) {
     // format desktop header
+    .wrap {
+        width: 100%;
+    }
+
+    .content-container.wrap {
+        width: 90%;
+    }
+
     .header {
         right: auto;
         bottom: 0;
         width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .header__nav {
+            transition: none;
+        }
         .header__mobile {
             display: none;
+        }
+
+        .header__profile-picture {
+            display: block;
+            border: 8px solid #e09585;
+            border-radius: 100%;
+            margin-top: -175px;
+            margin-bottom: 30px;
+            background-image: url("../../images/brandon.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: auto 120%;
+        }
+
+        .header__nav--open {
+            height: 0;
+        }
+
+        .nav-link {
+            text-align: center;
         }
     }
 
