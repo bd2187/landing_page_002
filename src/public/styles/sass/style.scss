@@ -35,7 +35,6 @@ a {
 .content-container__title {
     font-size: 3em;
     color: $secondary-color;
-    margin-bottom: 50px;
 }
 
 .secondary-title {
@@ -133,6 +132,7 @@ a {
 }
 
 .about {
+    height: 100vh;
     .about__title {
         display: flex;
         flex-direction: column;
@@ -243,5 +243,36 @@ a {
         .fa-check {
             margin: 0 7px;
         }
+    }
+}
+
+// ***** MEDIA QUERIES *****
+@media only screen and (min-width: 850px) {
+    .about {
+        &.content-container {
+            padding-top: 180px;
+        }
+        .about__title {
+            flex-direction: row;
+            .last-name {
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    // format desktop header
+    .header {
+        right: auto;
+        bottom: 0;
+        width: 270px;
+        .header__mobile {
+            display: none;
+        }
+    }
+
+    .section {
+        padding-left: 270px;
     }
 }

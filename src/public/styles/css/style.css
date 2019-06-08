@@ -30,7 +30,6 @@ a {
 .content-container__title {
   font-size: 3em;
   color: #343a40;
-  margin-bottom: 50px;
 }
 
 .secondary-title {
@@ -116,6 +115,9 @@ a {
   padding-bottom: 80px;
 }
 
+.about {
+  height: 100vh;
+}
 .about .about__title {
   display: flex;
   flex-direction: column;
@@ -206,6 +208,32 @@ a {
 }
 .skills .workflow__item .fa-check {
   margin: 0 7px;
+}
+
+@media only screen and (min-width: 850px) {
+  .about.content-container {
+    padding-top: 180px;
+  }
+  .about .about__title {
+    flex-direction: row;
+  }
+  .about .about__title .last-name {
+    margin: 0 15px;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .header {
+    right: auto;
+    bottom: 0;
+    width: 270px;
+  }
+  .header .header__mobile {
+    display: none;
+  }
+
+  .section {
+    padding-left: 270px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
