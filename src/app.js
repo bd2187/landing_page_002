@@ -49,6 +49,8 @@ const App = {
         var section_name = this.getAttribute("href").replace(/#/, "");
         var target_el = document.getElementById(section_name);
 
+        App.update_active_nav_link(this);
+
         if (target_el) {
             var target_pos = target_el.offsetTop;
             var start_pos = window.pageYOffset;
@@ -76,6 +78,21 @@ const App = {
             window.requestAnimationFrame(animate);
             App.toggle_nav();
         }
+    },
+
+    /**
+     *  Highlights nav link
+     *  @param Object active_element
+     *  @return
+     */
+    update_active_nav_link: function(active_element) {
+        var nav_links = [...document.querySelectorAll(".nav-link a")];
+
+        nav_links.forEach(function(link) {
+            link.classList.remove("nav-link__active");
+        });
+
+        active_element.classList.add("nav-link__active");
     },
 
     highlight_nav_section: function highlight_nav_section() {
