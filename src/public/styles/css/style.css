@@ -96,7 +96,7 @@ a {
   display: inline-block;
   color: rgba(255, 255, 255, 0.5);
 }
-.header .header__nav .nav-link a:hover {
+.header .header__nav .nav-link a:hover, .header .header__nav .nav-link a.nav-link__active {
   color: rgba(255, 255, 255, 0.75);
 }
 .header .header__nav .nav-link:first-child {
